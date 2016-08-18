@@ -1,0 +1,53 @@
+{
+  "name": "viewmodel-react-starter",
+  "version": "1.0.0",
+  "description": "Starter project to test ViewModel for React.",
+  "scripts": {
+    "start": "node server.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ManuelDeLeon/viewmodel-react-starter.git"
+  },
+  "keywords": [
+    "react",
+    "reactjs",
+    "boilerplate",
+    "viewmodel",
+    "starter",
+    "webpack"
+  ],
+  "author": "Manuel De Leon <manuel@me.com> (http://github.com/ManuelDeLeon)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ManuelDeLeon/viewmodel-react-starter/issues"
+  },
+  "homepage": "https://viewmodel.org",
+  "devDependencies": {
+    "babel-core": "^6.0.20",
+    "babel-jest": "^14.1.0",
+    "babel-loader": "^6.0.1",
+    "babel-polyfill": "^6.13.0",
+    "babel-preset-es2015": "^6.0.15",
+    "babel-preset-react": "^6.0.15",
+    "jest-cli": "^14.1.0",
+    "react-addons-test-utils": "^15.3.0",
+    "react-hot-loader": "^1.3.0",
+    "viewmodel-react-plugin": "^0.6.0",
+    "webpack": "^1.12.2",
+    "webpack-dev-server": "^1.12.1"
+  },
+  "dependencies": {
+    "react": "^15.3.0",
+    "react-dom": "^15.3.0",
+    "viewmodel-react": "^0.6.0"
+  },
+  "jest": {
+    "automock": false,
+    "testRegex": "\\.test\\.js$",
+    "testPathDirs": [
+      "src/"
+    ]
+  }
+}
