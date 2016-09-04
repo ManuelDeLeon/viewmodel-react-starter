@@ -1,6 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import TestUtils from 'react-addons-test-utils';
+import { shallow } from 'enzyme';
 import { Person } from './Person';
 
 describe('Person', () => {
@@ -19,21 +18,16 @@ describe('Person', () => {
   });
 
   describe('bindings', ()=>{
-    const intoDom = TestUtils.renderIntoDocument(
-      <Person  />
-    );
-    const rendered = ReactDOM.findDOMNode(intoDom);
+    const rendered = shallow(<Person />);
 
     it("binds input", ()=>{
-      const element = rendered.querySelectorAll('input')[0];
-      const binding = element.vmBinding;
-      expect(binding.value).toBe('name');
+      const elements = rendered.find('input[data-bind="value: name"]');
+      expect(elements.length).toBe(1);
     })
 
     it("binds label", ()=>{
-      const element = rendered.querySelectorAll('label')[0];
-      const binding = element.vmBinding;
-      expect(binding.text).toBe("'Hello ' + name");
+      const elements = rendered.find('label[data-bind="text: \'Hello \' + name"]');
+      expect(elements.length).toBe(1);
     })
   })
   

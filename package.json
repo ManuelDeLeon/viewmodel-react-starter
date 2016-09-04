@@ -26,26 +26,25 @@
   "homepage": "https://viewmodel.org",
   "devDependencies": {
     "babel-core": "^6.0.20",
-    "babel-jest": "^14.1.0",
+    "babel-jest": "^15.0.0",
     "babel-loader": "^6.0.1",
     "babel-polyfill": "^6.13.0",
     "babel-preset-es2015": "^6.0.15",
     "babel-preset-react": "^6.0.15",
-    "jest-cli": "^14.1.0",
+    "enzyme": "^2.4.1",
+    "jest-cli": "^15.1.1",
     "react-addons-test-utils": "^15.3.0",
     "react-hot-loader": "^1.3.0",
-    "viewmodel-react-plugin": "^0.6.0",
+    "viewmodel-react-plugin": "^0.7.1",
     "webpack": "^1.12.2",
     "webpack-dev-server": "^1.12.1"
   },
   "dependencies": {
     "react": "^15.3.0",
     "react-dom": "^15.3.0",
-    "viewmodel-react": "^0.6.0"
+    "viewmodel-react": "^0.7.1"
   },
   "jest": {
-    "automock": false,
-    "testRegex": "\\.test\\.js$",
     "testPathDirs": [
       "src/"
     ]
